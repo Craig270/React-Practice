@@ -4,11 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Counter from "./Components/Counter";
-
+import ColorCounts from "./Components/ColorCounts";
+import ButtonLogin from "./Components/ButtonLogin";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Counter />
+    {/* <Counter /> */}
+    {/* <ColorCounts /> */}
+    <ButtonLogin />
   </React.StrictMode>,
   document.getElementById("root")
 );
