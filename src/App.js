@@ -7,17 +7,36 @@ class App extends React.Component {
     this.state = {
       count: 0,
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleClickDown = this.handleClickDown.bind(this);
   }
 
   handleClick() {
-    console.log("I'm working!");
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1,
+      };
+    });
+  }
+
+  handleClickDown() {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count - 1,
+      };
+    });
   }
 
   render() {
     return (
-      <div className="btn btn-primary">
+      <div>
         <h1>{this.state.count}</h1>
-        <button onClick={this.handleClick}>Change!</button>
+        <button className="btn btn-warning" onClick={this.handleClick}>
+          Up!!
+        </button>
+        <button className="btn btn-danger" onClick={this.handleClickDown}>
+          Down!!
+        </button>
       </div>
     );
   }
