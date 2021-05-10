@@ -9,16 +9,18 @@ import ButtonLogin from "./Components/ButtonLogin";
 import Fetch from "./Components/Fetch";
 import Forms from "./Components/Forms";
 import Forms2 from "./Components/Forms2";
+import TravelForm from "./Components/TravelForm";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Counter />
-    <ColorCounts />
-    <ButtonLogin />
-    <Fetch />
-    <Forms />
-    <Forms2 />
+    {/* <Counter /> */}
+    {/* <ColorCounts /> */}
+    {/* <ButtonLogin /> */}
+    {/* <Fetch /> */}
+    {/* <Forms /> */}
+    {/* <Forms2 /> */}
+    <TravelForm />
   </React.StrictMode>,
   document.getElementById("root")
 );
