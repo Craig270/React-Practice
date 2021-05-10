@@ -7,6 +7,8 @@ import Counter from "./Components/Counter";
 import ColorCounts from "./Components/ColorCounts";
 import ButtonLogin from "./Components/ButtonLogin";
 import Fetch from "./Components/Fetch";
+import Forms from "./Components/Forms";
+import Forms2 from "./Components/Forms2";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +17,8 @@ ReactDOM.render(
     <ColorCounts />
     <ButtonLogin />
     <Fetch />
+    <Forms />
+    <Forms2 />
   </React.StrictMode>,
   document.getElementById("root")
 );
